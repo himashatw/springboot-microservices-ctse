@@ -1,12 +1,10 @@
-package com.ctse.employeeservice.entity;
+package com.ctse.employeeservice.dto;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-@Document(collection = "employee")
-public class Employee {
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+public class EmployeeUpdateDTO {
 
-    @Id
     private Integer id;
 
     private String name;
