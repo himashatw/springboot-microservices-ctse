@@ -1,12 +1,10 @@
-package com.ctse.customerservice.entity;
+package com.ctse.customerservice.resource;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
-@Document(collection = "customer")
-public class Customer {
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+public class CustomerUpdateResource {
 
-    @Id
     private int id;
     private String name;
     private String email;
