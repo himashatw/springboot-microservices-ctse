@@ -8,15 +8,24 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "employee")
+@RequestMapping(value = "/employee")
 @CrossOrigin(origins = "*")
 public class EmployeeController {
 
     @Autowired
     EmployeeService employeeService;
+
+     @GetMapping()
+    public String hello() {
+        return "Hello from Employee Service";
+    }
 
     @GetMapping(value = "/all")
     public ResponseEntity<Object> getAllItems() {
