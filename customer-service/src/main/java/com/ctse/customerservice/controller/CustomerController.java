@@ -9,13 +9,22 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 @RestController
-@RequestMapping(value = "customer")
+@RequestMapping("/customer")
 @CrossOrigin(origins = "*")
 public class CustomerController {
 
     @Autowired
     CustomerService customerService;
+
+    @GetMapping()
+    public String hello() {
+        return "Hello from Customer Service";
+    }
 
     @PostMapping(value = "/register")
     public ResponseEntity<Customer> addCustomer(@RequestBody Customer customer) {
