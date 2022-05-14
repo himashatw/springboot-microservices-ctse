@@ -22,3 +22,6 @@ zuul:
     rest2:
       path: /rest2/**
       serviceId: customer-service
+    rest3:
+      path: /rest3/**
+      serviceId: product-service
