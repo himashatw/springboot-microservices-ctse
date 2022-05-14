@@ -1,0 +1,24 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: zuul-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    appname: zuul-server
+    metadataMap:
+      instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}:${random.value}}
+
+zuul:
+  routes:
+    rest1:
+      path: /rest1/**
+      serviceId: employee-service
+    rest2:
+      path: /rest2/**
+      serviceId: customer-service
