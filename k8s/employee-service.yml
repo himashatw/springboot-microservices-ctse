@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: employee-service-app
-          image: himashatw/employee-service:0.0.1
+          image: abimanudevl/employee-service:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 9000

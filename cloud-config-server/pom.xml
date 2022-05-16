@@ -75,7 +75,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>himashatw/cloud-config-server</repository>
+					<repository>abimanudevl/cloud-config-server</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>

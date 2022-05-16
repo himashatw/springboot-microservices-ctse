@@ -71,7 +71,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>himashatw/service-registry</repository>
+					<repository>abimanudevl/service-registry</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
