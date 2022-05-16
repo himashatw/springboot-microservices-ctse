@@ -4,8 +4,8 @@
 name: IT19016962 CI/CD Pipeline
 
 on:
-  push:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
   workflow_dispatch:
 
 env:
