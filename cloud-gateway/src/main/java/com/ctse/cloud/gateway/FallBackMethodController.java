@@ -35,4 +35,10 @@ public class FallBackMethodController {
         return "Customer Service is taking longer than Expected." +
                 " Please try again later";
     }
+
+    @GetMapping("/orderServiceFallBack")
+    public String orderServiceFallBackMethod() {
+        return "Order Service is taking longer than Expected." +
+                " Please try again later";
+    }
 }
