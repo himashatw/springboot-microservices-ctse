@@ -4,8 +4,8 @@
 name: IT19753140 CI/CD Pipeline
 
 on:
-  push:
-    branches: [ master ]
+#   push:
+#     branches: [ master ]
   workflow_dispatch:
 
 env:
