@@ -88,7 +88,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>himashatw/order-service</repository>
+					<repository>abimanudevl/order-service</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>

@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: eureka
-          image: himashatw/service-registry:0.0.1
+          image: abimanudevl/service-registry:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 8761

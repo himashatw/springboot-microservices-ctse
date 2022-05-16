@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: product-service-app
-          image: himashatw/product-service:0.0.1
+          image: abimanudevl/product-service:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 9002
