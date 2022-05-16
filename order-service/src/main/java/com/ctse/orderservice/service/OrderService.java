@@ -1,6 +1,6 @@
-package com.example.orderservice.service;
+package com.ctse.orderservice.service;
 
-import com.example.orderservice.entity.Order;
+import com.ctse.orderservice.entity.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
