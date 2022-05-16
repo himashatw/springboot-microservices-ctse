@@ -1,7 +1,5 @@
-package com.example.orderservice.controller;
+package com.ctse.orderservice.controller;
 
-import com.example.orderservice.entity.Order;
-import com.example.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -9,13 +7,22 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import com.ctse.orderservice.entity.Order;
+import com.ctse.orderservice.service.OrderService;
+
 @RestController
-@RequestMapping("/order")
+@RequestMapping("/orders")
 @CrossOrigin(origins = "*")
 public class OrderController {
 
     @Autowired
     OrderService orderService;
+
+    
+    @GetMapping()
+    public String hello() {
+        return "Hello from Order Service";
+    }
 
     @GetMapping(value = "/placeOrder")
     public ResponseEntity<Order> addOrder(@RequestBody Order order){

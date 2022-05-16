@@ -1,12 +1,15 @@
-package com.example.orderservice.service.impl;
+package com.ctse.orderservice.service.impl;
 
-import com.example.orderservice.entity.Order;
-import com.example.orderservice.repository.OrderRepository;
-import com.example.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
+import com.ctse.orderservice.entity.Order;
+import com.ctse.orderservice.repository.OrderRepository;
+import com.ctse.orderservice.service.OrderService;
+import org.springframework.stereotype.Component;
+
+@Component
 public class OrderServiceImpl implements OrderService {
 
     @Autowired
