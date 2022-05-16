@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: customer-service-app
-          image: 19753140/customer-service:0.0.1
+          image: punsisiperera/customer-service:0.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 9001

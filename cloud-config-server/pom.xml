@@ -75,7 +75,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>19753140/cloud-config-server</repository>
+					<repository>punsisiperera/cloud-config-server</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>

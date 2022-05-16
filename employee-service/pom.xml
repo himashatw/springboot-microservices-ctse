@@ -95,7 +95,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>19753140/employee-service</repository>
+					<repository>punsisiperera/employee-service</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
