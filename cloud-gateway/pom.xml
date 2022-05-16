@@ -90,7 +90,7 @@
 					</execution>
 				</executions>
 				<configuration>
-					<repository>abimanudevl/cloud-gateway</repository>
+					<repository>19753140/cloud-gateway</repository>
 					<tag>${project.version}</tag>
 					<useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 				</configuration>
